@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio de sesión CIAF</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</head>
+
+<body>
+    <div class="Inicio">
+        <form onsubmit="return validar()">
+            <h2>Iniciar sesión</h2>
+            <div class="div1">
+                <span class="icon">
+                    <ion-icon name="person"></ion-icon>
+                </span>
+                <input type="text" placeholder="Usuario" id="usuario">
+            </div>
+            <div class="div1">
+                <span class="icon">
+                    <ion-icon name="lock-closed"></ion-icon>
+                </span>
+                <input type="password" placeholder="Contraseña" id="contraseña">
+            </div>
+            <div class="forgot-pass">
+                <a href="#">¿Olvidaste tu contraseña?</a>
+            </div>
+            <button type="submit" class="btn" onclick="validar()">Iniciar</button>
+            <div class="sign-link">
+                <p>¿No tienes un usuario? <a href="#" class="register-link">Register</a></p>
+            </div>
+        </form>
+
+    </div>
+
+</body>
+
+</html>
