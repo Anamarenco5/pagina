@@ -136,4 +136,6 @@ if (actividad === 2 && fisico===1) {
       }
       resultado.innerHTML = "El total a pagar es: $" + precioTotal;
     }
-    
+    function volver(){
+      window.location.href="index.html";
+    }
